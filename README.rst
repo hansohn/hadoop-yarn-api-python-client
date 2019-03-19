@@ -2,23 +2,9 @@
 hadoop-yarn-api-python-client
 =============================
 
+This codebase is originally written by toidi_ and can be found here_. This modified version is temporary and rolls in unreleased features currently part of the master branch. Once a new release has been officially cut, this repo will be destroyed.
+
 Python client for Apache Hadoop® YARN API
-
-.. image:: https://img.shields.io/pypi/v/yarn-api-client.svg
-    :target: https://pypi.python.org/pypi/yarn-api-client/
-    :alt: Latest Version
-
-.. image:: https://travis-ci.org/toidi/hadoop-yarn-api-python-client.svg?branch=master
-    :target: https://travis-ci.org/toidi/hadoop-yarn-api-python-client
-    :alt: Travis CI build status
-
-.. image:: http://readthedocs.org/projects/python-client-for-hadoop-yarn-api/badge/?version=latest
-    :target: https://python-client-for-hadoop-yarn-api.readthedocs.org/en/latest/?badge=latest
-    :alt: Latest documentation status
-
-.. image:: https://coveralls.io/repos/toidi/hadoop-yarn-api-python-client/badge.png
-    :target: https://coveralls.io/r/toidi/hadoop-yarn-api-python-client
-    :alt: Test coverage
 
 Package documentation: python-client-for-hadoop-yarn-api.readthedocs.org_
 
@@ -32,19 +18,13 @@ From PyPI
 
 ::
 
-    pip install yarn-api-client
-
-From Anaconda (conda forge)
-
-::
-
-    conda install -c conda-forge yarn-api-client
+    pip install yarn-api-client-fix
 
 From source code
 
 ::
 
-   git clone https://github.com/toidi/hadoop-yarn-api-python-client.git
+   git clone https://github.com/hansohn/hadoop-yarn-api-python-client.git
    pushd hadoop-yarn-api-python-client
    python setup.py install
    popd
@@ -88,6 +68,9 @@ Programmatic interface
 Changelog
 =========
 
+0.3.2-fix Release
+   - Add HADOOP_CONF_DIR env functionality.
+
 0.3.2 Release
    - Make Kerberos/SPNEGO dependency optional
 
@@ -107,3 +90,5 @@ Changelog
 
 .. _python-client-for-hadoop-yarn-api.readthedocs.org: http://python-client-for-hadoop-yarn-api.readthedocs.org/en/latest/
 .. _hadoop.apache.org: http://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/WebServicesIntro.html
+.. _toidi: https://github.com/toidi
+.. _here: https://github.com/toidi/hadoop-yarn-api-python-client

@@ -20,7 +20,7 @@ def find_version(*file_paths):
     raise RuntimeError("Unable to find version string.")
 
 setup(
-    name = 'yarn-api-client',
+    name = 'yarn-api-clienti-fix',
     version = find_version('yarn_api_client', '__init__.py'),
     description='Python client for Hadoop® YARN API',
     long_description=read('README.rst'),
@@ -43,10 +43,10 @@ setup(
     tests_require = ['mock'],
     test_suite = 'tests',
 
-    author = 'Iskandarov Eduard',
-    author_email = 'e.iskandarov@corp.mail.ru',
+    author = 'Ryan Hansohn',
+    author_email = 'info@imnorobot.com',
     license = 'BSD',
-    url = 'https://github.com/toidi/hadoop-yarn-api-python-client',
+    url = 'https://github.com/hansohn/hadoop-yarn-api-python-client',
     classifiers = [
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
